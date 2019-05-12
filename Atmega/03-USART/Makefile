@@ -25,17 +25,22 @@ ODIR:=build/obj
 
 # Define include path
 INCLUDE_PATH:=\
--I"D:\Programs\AtmelStudio_7.0\7.0\Packs\atmel\ATmega_DFP\1.2.132\include"
+-I"D:\Programs\AtmelStudio_7.0\7.0\Packs\atmel\ATmega_DFP\1.2.132\include" \
+-I"src"
+
 
 # Define list of source files
 C_SRCS +=\
+src/main.c \
 src/USART.c
 
 # Define list of object files
 _OBJS += \
+main.o \
 USART.o
 
 C_DEPS +=  \
+main.d += \
 USART.d
 
 OBJS_AS_ARGS = $(patsubst %,$(ODIR)/%,$(_OBJS))
