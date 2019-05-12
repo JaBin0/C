@@ -150,7 +150,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000       0x9e
+.text           0x00000000       0x9c
  *(.vectors)
  .vectors       0x00000000       0x54 D:/Programs/AtmelStudio_7.0/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega32a/avr5/crtatmega32a.o
                 0x00000000                __vector_default
@@ -228,13 +228,13 @@ END GROUP
                 0x00000068                __vector_20
                 0x0000006c                . = ALIGN (0x2)
  *(.text.*)
- .text.main     0x0000006c       0x2e build/obj/Button.o
+ .text.main     0x0000006c       0x2c build/obj/Button.o
                 0x0000006c                main
-                0x0000009a                . = ALIGN (0x2)
+                0x00000098                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000009a        0x0 d:/programs/atmelstudio_7.0/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x0000009a                _exit
-                0x0000009a                exit
+ .fini9         0x00000098        0x0 d:/programs/atmelstudio_7.0/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000098                _exit
+                0x00000098                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -253,11 +253,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000009a        0x4 d:/programs/atmelstudio_7.0/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000098        0x4 d:/programs/atmelstudio_7.0/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000009e                _etext = .
+                0x0000009c                _etext = .
 
-.data           0x00800060        0x0 load address 0x0000009e
+.data           0x00800060        0x0 load address 0x0000009c
                 [!provide]                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -274,8 +274,8 @@ END GROUP
  *(.bss*)
  *(COMMON)
                 [!provide]                PROVIDE (__bss_end, .)
-                0x0000009e                __data_load_start = LOADADDR (.data)
-                0x0000009e                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000009c                __data_load_start = LOADADDR (.data)
+                0x0000009c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800060        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
@@ -354,34 +354,34 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0x662
+.debug_info     0x00000000      0x5c1
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 D:/Programs/AtmelStudio_7.0/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_info    0x000004e6      0x17c build/obj/Button.o
+ .debug_info    0x000004e6       0xdb build/obj/Button.o
 
-.debug_abbrev   0x00000000      0x5b4
+.debug_abbrev   0x00000000      0x531
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4a3 D:/Programs/AtmelStudio_7.0/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_abbrev  0x000004a3      0x111 build/obj/Button.o
+ .debug_abbrev  0x000004a3       0x8e build/obj/Button.o
 
-.debug_line     0x00000000      0x23c
+.debug_line     0x00000000      0x1f5
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x115 D:/Programs/AtmelStudio_7.0/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_line    0x00000115      0x127 build/obj/Button.o
+ .debug_line    0x00000115       0xe0 build/obj/Button.o
 
 .debug_frame    0x00000000       0x24
  *(.debug_frame)
  .debug_frame   0x00000000       0x24 build/obj/Button.o
 
-.debug_str      0x00000000      0x303
+.debug_str      0x00000000      0x2c9
  *(.debug_str)
  .debug_str     0x00000000      0x196 D:/Programs/AtmelStudio_7.0/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_str     0x00000196      0x16d build/obj/Button.o
-                                0x1a6 (size before relaxing)
+ .debug_str     0x00000196      0x133 build/obj/Button.o
+                                0x16c (size before relaxing)
 
-.debug_loc      0x00000000       0x6e
+.debug_loc      0x00000000       0x51
  *(.debug_loc)
- .debug_loc     0x00000000       0x6e build/obj/Button.o
+ .debug_loc     0x00000000       0x51 build/obj/Button.o
 
 .debug_macinfo
  *(.debug_macinfo)
