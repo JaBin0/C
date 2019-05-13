@@ -1,5 +1,12 @@
+Atmega/02-Button/build/Button.elf
+Atmega/02-Button/build/Button.lss
 Atmega/03-USART/build/obj/
 Atmega/03-USART/build/USART.eep
 Atmega/03-USART/build/USART.lss
 Atmega/03-USART/build/USART.map
 Atmega/03-USART/build/USART.srec
+Atmega/04-Analog//build/obj/
+Atmega/04-Analog/build/Analog.eep
+Atmega/04-Analog/build/Analog.lss
+Atmega/04-Analog/build/Analog.map
+Atmega/04-Analog/build/Analog.srec
